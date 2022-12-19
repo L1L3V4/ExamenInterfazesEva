@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- Completa tu nombre -->
     <title>EVA_TELLEZ_BERNAL</title>
 </head>
@@ -21,7 +20,7 @@
         </div>
         <div class="div2">
             <br>
-            <table class="tabla table-hover">
+            <table class="tabla">
                 <tr>
                     <th>Nombre</th>
                     <th>Sexo</th>
@@ -35,51 +34,51 @@
                 
                 <tr>
                     <td>Francisco Romero</td>
-                    <td class="subrayado azul">Hombre</td>
+                    <td><p class="subrayado azul">Hombre</p></td>
                     <td>31</td>
                     <td>198</td>
                     <td>89</td>
-                    <td class="subrayado gris">Moderada</td>
+                    <td><p class="subrayado gris">Moderada</p></td>
                     <td>1427 kCal</td>
                     <td>1712 kCal</td>
                 </tr>
                 <tr>
                     <td>Jose Antonio Lara</td>
-                    <td class="subrayado azul">Hombre</td>
+                    <td><p class="subrayado azul">Hombre</p></td>
                     <td>46</td>
                     <td>187</td>
                     <td>85</td>
-                    <td class="subrayado gris">Moderada</td>
+                    <td><p class="subrayado gris">Moderada</p></td>
                     <td>1333 kCal</td>
                     <td>1435 kCal</td>
                 </tr>
                 <tr>
                     <td>Jeniffer Lopez</td>
-                    <td class="subrayado rosa">Mujer</td>
+                    <td><p class="subrayado rosa">Mujer</p></td>
                     <td>45</td>
                     <td>167</td>
                     <td>56</td>
-                    <td class="subrayado gris">Alta</td>
+                    <td><p class="subrayado gris">Alta</p></td>
                     <td>1256 kCal</td>
                     <td>1943 kCal</td>
                 </tr>
                 <tr>
                     <td>Jeniffer Lopez</td>
-                    <td class="subrayado rosa">Mujer</td>
+                    <td><p class="subrayado rosa">Mujer</p></td>
                     <td>45</td>
                     <td>167</td>
                     <td>56</td>
-                    <td class="subrayado gris">Alta</td>
+                    <td><p class="subrayado gris">Alta</p></td>
                     <td>1256 kCal</td>
                     <td>1943 kCal</td>
                 </tr>
                 <tr>
                     <td>Jeniffer Lopez</td>
-                    <td class="subrayado rosa">Mujer</td>
+                    <td><p class="subrayado rosa">Mujer</p></td>
                     <td>45</td>
                     <td>167</td>
                     <td>56</td>
-                    <td class="subrayado gris">Alta</td>
+                    <td><p class="subrayado gris">Alta</p></td>
                     <td>1256 kCal</td>
                     <td>1943 kCal</td>
                 </tr>
@@ -95,33 +94,36 @@
     </div>
 
     <dialog id="modal1">
-        <div class="parent">
             <div class="div1">
                 <h1>Nuevo cliente</h1>
             </div>
             <div class="div2">
             <form class="margenform">
-                <label for="fname">Nombre: </label><input type="text" name="name" required><br>
+                <label for="fname">Nombre: </label><input type="text" id="nombreModal" name="name" value= "" required><br>
                 <label for="fname">Sexo: </label>
-                    <input type="radio" id="hombre" value="homre">
+                    <input type="radio" id="hombre" value="hombre" name="sexo">
                     <label for="hombre">Hombre</label>
-                    <input type="radio" id="mujer" value="mujer">
+                    <input type="radio" id="mujer" value="mujer" name="sexo" checked>
                     <label for="mujer">Mujer</label>
-                <br>    
-                <label for="fname">Altura(cm):</label><input type="number" id="altura" name="altura" min="130" max="200"><br>
-                <label for="fname">Peso(kg):</label><input type="number" id="peso" name="peso" min="30" max="300"><br>
+                <br>
+                <label for="fname">Edad:</label><input type="number" id="edad" name="edad" min="15" max="99" value="20"><br>    
+                <label for="fname">Altura(cm):</label><input type="number" id="altura" name="altura" min="130" max="240" value="165"><br>
+                <label for="fname">Peso(kg):</label><input type="number" id="peso" name="peso" min="45" max="145" value="65"><br>
                 <label for="fname">Actividad fisica:</label>
                 <select name="actividades" id="actividades">
                     <option value="s">Suave o sedentaria</option>
                     <option value="m">Media</option>
                     <option value="a">Alta</option>
                 </select>
-            </form>
-            </div>
-            <div class="div3">
-                <input class="botoncliente" type="submit" value="Añadir nuevo">
+                <br>
+                <br>
+                <div class="div3"><input class="botoncliente" type="submit" id="sumbit" value="Añadir nuevo" onclick="validar()">
                 <a href="index.html"><button class="botoncliente">Volver atras</button></a>
             </div>
+            </form>
+
+            </div>
+            
     </dialog>
 
     <!-- Completar html aqui -->

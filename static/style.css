@@ -4,7 +4,7 @@ body{
     /*Fondo gradiente*/
     background: rgb(0,0,0);
     background: linear-gradient(142deg, rgba(0,0,0,1) 0%, rgba(253,164,29,1) 33%, rgba(189,189,189,1) 100%);
-    height: 87vh;
+    height: 100vh;
     /*Fondo gradiente*/
 }
 /*tabla*/
@@ -31,7 +31,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
-.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+.tabla tr:hover{
     background-color: #F58B29;
   }
 /*tabla*/
@@ -43,7 +43,7 @@ body{
     grid-template-rows: auto auto auto;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    margin-top: 7em;
+    margin-top: 2em;
     margin-left: 30em;
     margin-right: 30em;
     }
@@ -71,14 +71,13 @@ body{
     border: none;
     color: white;
     padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
     text-align: center;
     font-size: 16px;
     cursor: pointer;
     border-radius: 12px;
-    margin-right: 21em;
-    margin-left: 21em;
+    margin-left: 15em;
   }
 
 .botoncliente {
@@ -94,6 +93,7 @@ body{
     border-radius: 12px;
     margin-top: 2%;
     margin-bottom: 2%;
+    font-family: Arial, Helvetica, sans-serif;
   }
 /*Boton*/
 
@@ -103,12 +103,18 @@ body{
 }
 .azul{
     background-color: blue;
+    border: 15px solid blue;
+    border-radius: 8px;
 }
 .rosa{
     background-color: pink;
+    border: 15px solid pink;
+    border-radius: 8px;
 }
 .gris{
     background-color: darkgray;
+    border: 15px solid darkgray;
+    border-radius: 8px;
 }
 /*Subrayado*/
 
@@ -116,5 +122,5 @@ body{
     margin-top: 10%;
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 10%;
+    font-family: Arial, Helvetica, sans-serif;
 }

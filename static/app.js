@@ -1,8 +1,11 @@
 // Eva Téllez Bernal
 //
 // Completar JS aqui
-const form = document.getElementById('form-id');
-form.addEventListener('submit', event => {
-  event.preventDefault();
-  alert('Datos enviados con exito!');
-});
+var nombre = document.getElementById("nombreModal");
+var submit = document.getElementById("submit");
+
+function validar(){
+  if(nombre.value != null){
+    alert("Datos enviados con exito!");
+  }
+}
