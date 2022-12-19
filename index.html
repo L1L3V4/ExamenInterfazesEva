@@ -85,7 +85,7 @@
                 </tr>
             </table>
             <br>
-            <a href="nuevo_cliente.html"><button class="boton">Añadir cliente</button></a>
+            <button onclick="window.modal1.showModal();" class="boton">Añadir cliente</button>
             <br>
             <br>
         </div>
@@ -93,6 +93,36 @@
             <h4>Eva Téllez Bernal 2022</h4>
         </div>
     </div>
+
+    <dialog id="modal1">
+        <div class="parent">
+            <div class="div1">
+                <h1>Nuevo cliente</h1>
+            </div>
+            <div class="div2">
+            <form class="margenform">
+                <label for="fname">Nombre: </label><input type="text" name="name" required><br>
+                <label for="fname">Sexo: </label>
+                    <input type="radio" id="hombre" value="homre">
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" id="mujer" value="mujer">
+                    <label for="mujer">Mujer</label>
+                <br>    
+                <label for="fname">Altura(cm):</label><input type="number" id="altura" name="altura" min="130" max="200"><br>
+                <label for="fname">Peso(kg):</label><input type="number" id="peso" name="peso" min="30" max="300"><br>
+                <label for="fname">Actividad fisica:</label>
+                <select name="actividades" id="actividades">
+                    <option value="s">Suave o sedentaria</option>
+                    <option value="m">Media</option>
+                    <option value="a">Alta</option>
+                </select>
+            </form>
+            </div>
+            <div class="div3">
+                <input class="botoncliente" type="submit" value="Añadir nuevo">
+                <a href="index.html"><button class="botoncliente">Volver atras</button></a>
+            </div>
+    </dialog>
 
     <!-- Completar html aqui -->
 
